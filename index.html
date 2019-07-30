@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <style>
+    video {
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  We are using Node.js <span id="node-version"></span>,
+  Chromium <span id="chrome-version"></span>,
+  and Electron <span id="electron-version"></span>.
+
+  <br>
+  <button onclick="toggleRecording(this)">START Recording</button>
+  <br>
+  <button onclick="getSources(this)">Get Sources</button>
+  <br>
+  <div id="duration"></div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+
+
+</body>
+
+</html>
